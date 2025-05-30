@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid and Flexbox Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+            <style>
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="p-4">
+    <header class="bg-blue-500 text-white p-4">
+        <h1 class="text-3xl">Grid and Flexbox Layout</h1>
+    </header>
+
+    <main class="grid grid-cols-2 lg:grid-cols-2 gap-1 mt-4 min-h-screen">
+        
+        <aside class="bg-green-200 p-4 ">Sidebar</aside>
+        <section class="grid grid-cols-1 gap-2 lg:grid-cols-3 md:grid-cols-2">
+            <img class="aspect-video object-cover" src="../assets/download.jpeg" alt="">
+            <img class="aspect-video object-contain" src="../assets/download (1).jpeg" alt="">
+            <img class="aspect-video object-fill" src="../assets/ferrrari.jpeg" alt="">
+            <img class="aspect-video object-cover" src="../assets/glk3.jpeg" alt="">
+            <img class="aspect-video object-cover" src="../assets/venza.jpeg" alt="">
+            <img class="aspect-video object-cover" src="../assets/venza2.jpeg" alt="">
+            <img class="aspect-video object-cover" src="../assets/wagon.jpeg" alt="">
+            <img class="aspect-video object-cover" src="../assets/wagon2.jpeg" alt="">
+            <img class="aspect-video object-cover" src="../assets/wagon3.jpeg" alt="">
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-4 mt-4">
+        <p>&copy; 2025 Nuelo's Blog</p>
+    </footer>
+</body>
+</html>
